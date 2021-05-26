@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+<!--        <report-->
+<!--                id="abs_report.report_invoice_with_payments_no_header"-->
+<!--                model="account.move"-->
+<!--                string="Facture sans entete"-->
+<!--                name="abs_report.report_invoice_with_payments_no_header"-->
+<!--                file="abs_report.report_invoice_with_payments_no_header"-->
+<!--                report_type="qweb-pdf"/>-->
+
+        <report
+                id="abs_report.report_invoice"
+                model="account.move"
+                string="Facture (ABS)"
+                name="abs_report.report_invoice_abs"
+                file="abs_report.report_invoice_abs"
+                report_type="qweb-pdf"/>
+
+
+        <report
+                id="abs_report.report_invoice_no_header"
+                model="account.move"
+                string="Facture sans paiements sans entete"
+                name="abs_report.report_invoice_no_header"
+                file="abs_report.report_invoice_no_header"
+                report_type="qweb-pdf"/>
+
+
+
+
+    </data>
+</odoo>

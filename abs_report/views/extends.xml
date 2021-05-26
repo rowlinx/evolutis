@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="abs_res_company_view_form" model="ir.ui.view">
+            <field name="name">res.company</field>
+            <field name="model">res.company</field>
+            <field name="priority" eval="25"/>
+            <field name="inherit_id" ref="base.view_company_form"/>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='general_info']" position="after">
+                    <page string="Banque">
+                       <group colspan="4" cols="4">
+                           <field name="bank_name"/>
+                           <field name="bank_code"/>
+                           <field name="code_guichet"/>
+                           <field name="account_number"/>
+                           <field name="rib"/>
+                           <field name="code_swift"/>
+                       </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,12 @@
+.idea
+*.log*
+*.pyc
+env/
+cron/
+edu_karajan
+*.sqlite3
+test.py
+.scannerwork
+Supprimerait addons/__pycache__/
+Supprimerait addons/prototype/__pycache__/
+Supprimerait core/__pycache__/
