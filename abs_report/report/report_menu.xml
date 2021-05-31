@@ -28,6 +28,15 @@
                 report_type="qweb-pdf"/>
 
 
+        <report
+                id="abs_report.report_sale_order_no_header"
+                model="sale.order"
+                string="Devis/Commande sans entete"
+                name="abs_report.report_sale_order_no_header"
+                file="abs_report.report_sale_order_no_header"
+                report_type="qweb-pdf"/>
+
+
 
 
     </data>
